@@ -1,0 +1,59 @@
+.drawing {
+    width: fit-content;
+ }
+.drawing:hover .drawing-wrapper {
+    transform: translateY(9rem);
+}
+.drawing-wrapper {
+    position: relative;
+    transition: transform .2s ease-in-out;
+}
+.drawing img {
+    width: 250px;
+    height: auto;
+    margin-bottom: -1rem;
+}
+.drawing-eye-socket {
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    background: #fff;
+
+}
+.drawing-eye-socket--left {
+    left: 108px;
+    top: 182px;
+    width: 25px;
+    height: 25px;
+}
+
+.drawing-eye-socket--right {
+    right: 85px;
+    top: 188px;
+    width: 16px;
+    height: 16px;
+}
+
+.drawing-eye:before {
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: 0;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #333;
+    /*border: 1px solid yellow;*/
+}
+
+.drawing-eye--left:before {
+    top: 5px;
+    left: 15px;
+}
+
+.drawing-eye--right:before {
+    top: 1px;
+    left: 6px;
+}
+
+
